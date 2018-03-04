@@ -1,0 +1,24 @@
+import java.awt.*;
+
+public class Menu{
+
+	public static void main(String[] args){
+		StdDraw.setYscale(-10,10);
+		StdDraw.setXscale(-10,10);
+		StdDraw.setScale(-10,10);
+		StdDraw.setPenColor(StdDraw.GRAY);
+		StdDraw.filledSquare(0,0,10);
+		StdDraw.setPenColor(StdDraw.YELLOW);
+		Font font = new Font("Sans Serif", Font.BOLD, 30);
+   		StdDraw.setFont(font);
+		StdDraw.text(0,8, "COSMIC CONQUISTADORS");
+
+		Font font1 = new Font("Sans Serif", Font.BOLD, 16);
+   		StdDraw.setFont(font1);
+		StdDraw.text(0,4, "Press Space to Save the World!");
+		StdDraw.text(0,0, "Shoot (w)");
+		StdDraw.text(0,-2, "Rotate: Left (a), Stop (s), Right (d)");
+		StdDraw.text(0,-4, "Move: Left (z), Stop (x), Right (c)");
+		StdDraw.text(0,-6, "Quit (q), Screencap (p)");
+	}
+}
